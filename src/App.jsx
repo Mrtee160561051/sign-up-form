@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import odinLogo from "./assets/odin-lined.png"
 function App() {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -46,14 +46,14 @@ function App() {
 
   return (
     <main className="bg-[whitesmoke] text-[max(3vmin,0.5rem)] min-h-[100vh] grid grid-cols-4">
-      <section className="col-[1/2] text-white overflow-hidden bg-[url('src/assets/leave.jpg')] bg-fixed bg-contain">
+      <section className={`leave col-[1/2] text-white overflow-hidden bg-fixed bg-contain`}>
         <div className="top-28 w-full fixed py-3 bg-[rgba(0,0,0,0.45)]">
           <div className="flex place-content-center w-[25vw]">
-            <img className="w-[3rem] h-auto" src="src/assets/odin-lined.png" alt="Odin logo"/>
-            <p className="text-[2.4rem]">ODIN</p>
+            <img className="w-[3rem] h-auto" src={odinLogo} alt="Odin logo"/>
+            <p className="text-[2.8rem]">ODIN</p>
           </div>
         </div>
-        <p className="text-[max(2vmin,0.4rem)] sm:text-center text-white fixed pl-1 bottom-2 w-[25vw]">
+        <p className="text-[max(2.5vmin,0.4rem)] sm:text-center text-white fixed pl-1 bottom-2 w-[25vw]">
           Photo by &nbsp;<u>helie</u>&nbsp; west on &nbsp;<u>unplash</u>
         </p>
       </section>
