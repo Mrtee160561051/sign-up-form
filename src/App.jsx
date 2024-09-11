@@ -58,13 +58,13 @@ function App() {
         </p>
       </section>
 
-      <section className="px-11 py-8 bg-[whitesmoke] col-[2/5] z-10">
-        <div className="font-bold">
+      <section className="py-8 bg-[whitesmoke] col-[2/5] z-10">
+        <div className="font-bold px-11">
           <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
           <p className="my-5">You know you want to.</p>
         </div>
         <form onSubmit={handleSubmit}>
-          <fieldset className="bg-white px-10 mt-9 pt-4 mb-5">
+          <fieldset className="bg-white shadow-lg px-10 mt-9 pt-4 mb-5">
             <p className="text-[max(4vmin,0.6rem)] font-medium">Let's do this!</p>
             <article className="grid gap-y-2 gap-x-11 sm:grid-cols-2 pt-2 pb-4">
               <div>
@@ -143,9 +143,9 @@ function App() {
               </div>
             </article>
           </fieldset>
-          <button type="submit" className="bg-[#678e55] hover:text-[#283621ea] text-white rounded-md py-1 px-5 mb-5">Create Account</button>
+          <button type="submit" className="mx-11 bg-[#678e55] hover:text-[#283621ea] text-white rounded-md py-1 px-5 mb-5">Create Account</button>
         </form>
-        <div className="flex gap-2 flex-wrap">
+        <div className="px-11 flex gap-2 flex-wrap">
           <p>Already have an account?</p>
           <a className="text-[#283621] font-semibold hover:text-[#283621b9]" href="#">Log in</a>
         </div>
